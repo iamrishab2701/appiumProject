@@ -6,7 +6,7 @@ import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.remote.RemoteWebElement;
 
-public class util extends BaseTest{
+public class util extends AndroidBaseTest {
     public static long IMPLICIT_WAIT = 15;
 
     public static void longPressAction(WebElement element)
