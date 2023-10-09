@@ -2,7 +2,7 @@ package org.appiumProject.android;
 
 import io.appium.java_client.AppiumBy;
 import org.appiumProject.utility.AndroidBaseTest;
-import org.appiumProject.utility.util;
+import org.appiumProject.utility.androidUtil;
 import org.openqa.selenium.WebElement;
 import org.testng.Assert;
 import org.testng.annotations.Test;
@@ -17,7 +17,7 @@ public class dragAndDrop extends AndroidBaseTest {
 
         WebElement sourceElement = driver.findElement(AppiumBy.id("io.appium.android.apis:id/drag_dot_1"));
         //Drag and Drop
-        util.dragAndDrop(sourceElement, 645,595);
+        androidUtil.dragAndDrop(sourceElement, 645,595);
         String dragResult = driver.findElement(AppiumBy.xpath("//android.widget.TextView[@resource-id=\"io.appium.android.apis:id/drag_result_text\"]")).getText();
         Assert.assertEquals(dragResult, "Dropped!");
     }

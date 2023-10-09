@@ -6,7 +6,11 @@ import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.remote.RemoteWebElement;
 
-public class util extends AndroidBaseTest {
+import java.util.HashMap;
+import java.util.Map;
+
+public class androidUtil extends AndroidBaseTest {
+
     public static long IMPLICIT_WAIT = 15;
 
     public static void longPressAction(WebElement element)

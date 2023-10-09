@@ -2,7 +2,7 @@ package org.appiumProject.android;
 
 import io.appium.java_client.AppiumBy;
 import org.appiumProject.utility.AndroidBaseTest;
-import org.appiumProject.utility.util;
+import org.appiumProject.utility.androidUtil;
 import org.openqa.selenium.WebElement;
 import org.testng.Assert;
 import org.testng.annotations.Test;
@@ -19,7 +19,7 @@ public class swipeDemo extends AndroidBaseTest {
         String firstImageFocusable = driver.findElement(AppiumBy.xpath("//android.widget.ImageView[1]")).getAttribute("focusable");
         Assert.assertEquals(firstImageFocusable, "true");
         //Swipe
-        util.swipeAction(firstImage, "left");
+        androidUtil.swipeAction(firstImage, "left");
         Assert.assertEquals(firstImageFocusable,"true");
     }
 }

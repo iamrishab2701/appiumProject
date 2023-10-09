@@ -10,7 +10,6 @@ import org.testng.annotations.BeforeClass;
 
 import java.io.File;
 import java.io.IOException;
-import java.net.MalformedURLException;
 import java.net.URL;
 import java.time.Duration;
 import java.util.HashMap;
@@ -50,10 +49,10 @@ public class AndroidBaseTest {
 
         options = new UiAutomator2Options();
         options.setDeviceName("emulator");
-        options.setApp("/Users/rishabsingh/Documents/Development/projects/appiumProject/src/test/java/resources/ApiDemos-debug.apk");
-        options.setChromedriverExecutable("/Users/rishabsingh/Documents/Development/projects/ECommerceAppEndToEndAppium/src/main/java/resources/chromedriver");
+        options.setApp("/Users/rishabsingh/Documents/Development/Projects/appiumProject/src/test/java/resources/ApiDemos-debug.apk");
+        options.setChromedriverExecutable("/Users/rishabsingh/Documents/Development/Projects/appiumProject/src/test/java/resources/chromedriver");
         driver = new AndroidDriver(new URL("http://127.0.0.1:4723"), options);
-        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(util.IMPLICIT_WAIT));
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(androidUtil.IMPLICIT_WAIT));
     }
 
 

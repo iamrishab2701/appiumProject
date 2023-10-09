@@ -55,7 +55,7 @@ public class BrowserBaseTest {
         //options.setApp("/Users/rishabsingh/Documents/Development/projects/ECommerceAppEndToEndAppium/src/main/java/resources/General-Store.apk");
         options.setChromedriverExecutable("/Users/rishabsingh/Documents/Development/projects/appiumProject/src/test/java/resources/chromedriver");
         driver = new AndroidDriver(new URL("http://127.0.0.1:4723"), options);
-        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(util.IMPLICIT_WAIT));
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(androidUtil.IMPLICIT_WAIT));
     }
 
     @AfterClass
